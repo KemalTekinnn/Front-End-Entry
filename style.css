@@ -20,8 +20,14 @@ div {
     display: block;
     margin: 0 auto;
     padding: 10px;
-   
+    overflow:auto;
 }
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
 #p1 {
     background-color: greenyellow;
     border: 1px solid black;
@@ -75,5 +81,20 @@ section {
     border: 1px solid black;
     text-align: center;
     padding: 10px;
-    margin: 40px auto;
+    margin: 30px auto;
+    width:auto;
+    height: auto;
+    display: block;
+}
+    a:link {
+        clear:both;
+
+    }
+a:link,a:visited {
+    background-color: red;
+    color:blue;
+}
+a:hover,a:active{
+    background-color: black;
+    color:white;
 }
