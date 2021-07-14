@@ -1,0 +1,10 @@
+* {
+    border-sizing: border-box;
+
+}
+div {
+    background-color: gray;
+    float: left; 
+    width: 20%;
+    padding:20px; 
+}
