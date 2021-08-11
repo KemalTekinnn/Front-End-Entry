@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+article {
+  border: 5px solid black;
+}
+
+h2 {
+  text-align: center;
+  background: rgb(213, 208, 208);
+  text-transform: uppercase;
+}
+
+p strong {
+  font-size: 35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.addtocart {
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 2px;
+
+  border: none;
+}
+.addtocart:hover {
+  font-size: 20px;
+  background: Black;
+  color: white;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+}
+.free {
+  font-weight: bold;
+  color: #777;
+  font-size: 12px;
+}
+.infolink:link,
+.infolink:visited {
+  color: Black;
+}
+.infolink:hover,
+.infolink:active {
+  text-decoration: none;
+}
+ul {
+  list-style: square;
+}
