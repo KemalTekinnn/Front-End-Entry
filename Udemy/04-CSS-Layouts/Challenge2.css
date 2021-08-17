@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.container {
+  width: 825px;
+  margin: 150px auto;
+  position: relative;
+}
+
+article {
+  border: 4px solid black;
+  margin: 50px auto;
+}
+
+h2 {
+  text-align: center;
+  background: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.sale {
+  color: white;
+  background: Red;
+  position: absolute;
+  font-size: 12px;
+  padding: 7px 15px;
+  top: -15px;
+  left: -25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h3 {
+  margin-bottom: 8px;
+}
+
+.price-section strong {
+  font-size: 25px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.addtocart {
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 7px;
+  width: 100%;
+
+  border: none;
+}
+.addtocart:hover {
+  font-size: 20px;
+  background: white;
+  color: black;
+  padding: 7px;
+  width: 100%;
+  border-top: 5px solid black;
+  cursor: pointer;
+}
+.free {
+  font-weight: bold;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.margin {
+  margin-bottom: 30px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+.infolink:link,
+.infolink:visited {
+  color: Black;
+}
+.infolink:hover,
+.infolink:active {
+  text-decoration: none;
+}
+ul {
+  list-style: square;
+}
+ul li {
+  margin: 20px auto;
+}
+ul li:last-child {
+  margin-bottom: 0px;
+}
+/* Colors */
+.colors {
+  display: flex;
+  gap: 10px;
+}
+.color {
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+.black {
+  background: black;
+}
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
+.brown {
+  background: brown;
+}
+/* Colors End */
+/* FLEXBOX */
+.row {
+  display: flex;
+  gap: 40px;
+  flex: 1 1;
+}
+.product-section {
+  font-size: 16px;
+  flex: 1 0;
+  margin-top: 25px;
+}
+.price-section {
+  margin-top: 25px;
+  flex: 1 0;
+  justify-content: space-between;
+}
+.free {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  font-family: sans-serif;
+  margin-left: 40px;
+}
+.img {
+  display: flex;
+  order: 0;
+}
