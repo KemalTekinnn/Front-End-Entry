@@ -1,4 +1,4 @@
-# <a href="https://kemaltekinnn.github.io/Front-End-Entry/Udemy/04-CSS-Layouts/Challenge2grid.html"> HTML,CSS </a>
+# <a href="https://kemaltekinnn.github.io/Front-End-Entry/Udemy/04-CSS-Layouts/Challenge2grid.html"> Html,Css Example </a>
 I'm trying to learn front-end things
 
 My Courses;
