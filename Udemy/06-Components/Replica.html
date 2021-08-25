@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Replica</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .container {
+        width: 700px;
+        margin: 100px auto;
+
+        display: Flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .box {
+        display: Grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 10px;
+        padding: 20px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+      }
+      .hidden-box {
+        grid-column: 2;
+        font-size: 16px;
+        display: none;
+      }
+
+      .number {
+        color: #ced4da;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .text {
+        font-size: 24px;
+        color: #087f5b;
+        font-weight: 500;
+      }
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .list {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+        color: #868e96;
+      }
+
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+      .open .number {
+        color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p class="number">01</p>
+        <p class="text">Where Are these Chairs Assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="{2}"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quaerat laborum, sequi, earum inventore quis asperiores culpa,
+            temporibus magni iure nobis. Molestias expedita eius provident,
+            laudantium dolor maxime enim facilis!
+          </p>
+          <ul class="list">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box open">
+        <p class="number">02</p>
+        <p class="text">How Long Do I Have to Return My Chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="{2}"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quaerat laborum, sequi, earum inventore quis asperiores culpa,
+            temporibus magni iure nobis. Molestias expedita eius provident,
+            laudantium dolor maxime enim facilis!
+          </p>
+          <ul class="list">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <p class="number">03</p>
+        <p class="text">Do you ship to countries to outside EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="{2}"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quaerat laborum, sequi, earum inventore quis asperiores culpa,
+            temporibus magni iure nobis. Molestias expedita eius provident,
+            laudantium dolor maxime enim facilis!
+          </p>
+          <ul class="list">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
