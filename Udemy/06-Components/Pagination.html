@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pagination second try</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -16,74 +16,79 @@
         box-sizing: border-box;
       }
       body {
-        display: flex;
-        justify-content: center;
+        line-height: 1;
         font-family: Inter, sans-serif;
-      }
-      .container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
         margin-top: 200px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        gap: 12px;
       }
-      a {
-        font-size: 32px;
+      .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+      .link-number {
+        color: #000;
+      }
+      .link-number:link,
+      .link-number:visited {
+        display: flex;
+
+        font-size: 22px;
         text-decoration: none;
-        display: flex;
-        justify-content: center;
-        color: #000;
-        align-content: center;
-      }
-      a:link {
-        width: 40px;
-        height: 40px;
-        color: #000;
         border-radius: 50%;
-      }
-      a:hover {
+        align-items: center;
+        justify-content: center;
         width: 40px;
         height: 40px;
+      }
+      .link-number:active,
+      .link-number:hover {
+        display: flex;
         color: #fff;
+        background-color: green;
         border-radius: 50%;
-        background-color: #087f5b;
-      }
-      #none {
-        font-size: 32px;
-        text-decoration: none;
-        display: flex;
+        align-items: center;
         justify-content: center;
-        color: #000;
+        width: 40px;
+        height: 40px;
       }
-      #none:hover {
-        font-size: 32px;
-        text-decoration: none;
-        display: flex;
+      .btn {
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        background: none;
         justify-content: center;
-        color: #000;
+        align-items: center;
+        cursor: pointer;
       }
 
-      .btni:link {
-        border: 1px solid #087f5b;
-        width: 40px;
-        height: 40px;
+      .btn:hover {
+        background: #087f5b;
       }
-      .btni:hover {
-        width: 40px;
-        height: 40px;
+      .btn:hover .icon {
         stroke: #fff;
-        border-radius: 50%;
-        background-color: #087f5b;
       }
     </style>
+    <!--  MAIN COLOR : #087f5b
+        TEXT-COLOR:  #343a40 
+        UL #868e96; 
+        NUMBER #ced4da;-->
   </head>
-
   <body>
-    <div class="container">
-      <a href="#" class="btni">
+    <div class="pagination">
+      <button class="btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="icon"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -95,19 +100,19 @@
             d="M15 19l-7-7 7-7"
           />
         </svg>
-      </a>
-      <a href="#" class="btn">1</a>
-      <a href="#" class="btn">2</a>
-      <a href="#" class="btn">3</a>
-      <a href="#" class="btn">4</a>
-      <a href="#" class="btn">5</a>
-      <a href="#" class="btn">6</a>
-      <span id="none">...</span>
-      <a href="#" class="btn">22</a>
-      <a href="#" class="btni">
+      </button>
+      <a href="#" class="link-number">1</a>
+      <a href="#" class="link-number">2</a>
+      <a href="#" class="link-number">3</a>
+      <a href="#" class="link-number">4</a>
+      <a href="#" class="link-number">5</a>
+      <a href="#" class="link-number">6</a>
+      <span class="text">...</span>
+      <a href="#" class="link-number">22</a>
+      <button class="btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="icon"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -119,7 +124,7 @@
             d="M9 5l7 7-7 7"
           />
         </svg>
-      </a>
+      </button>
     </div>
   </body>
 </html>
