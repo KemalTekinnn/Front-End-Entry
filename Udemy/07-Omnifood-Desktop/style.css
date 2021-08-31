@@ -1,0 +1,117 @@
+/*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+          Primay : #e67e22
+           
+          Tints: #fdf2e9
+          Shades: #cf711f
+          Accents: 
+          Grey: 
+          #555
+
+          SHADOWS 
+
+          BORDER RADIUS 
+
+          WHITESPACE
+      */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.section-header {
+  background-color: #fdf2e9;
+  padding: 6rem 0;
+}
+.hero {
+  display: grid;
+  max-width: 81.25rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+}
+.heading-primary {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5;
+}
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  transition: background-color 300;
+  font-weight: 600;
+}
+
+.btn-left:link,
+.btn-left:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-left:hover,
+.btn-left:active {
+  background-color: #cf711f;
+}
+.margin-sm {
+  margin-right: 1rem !important;
+}
+
+.btn-right:link,
+.btn-right:visited {
+  background-color: #fae5d3ff;
+  color: #555;
+}
+.btn-right:hover,
+.btn-right:active {
+  background-color: #f8d8bd;
+  color: #333;
+}
+
+.hero-img {
+  width: 100%;
+}
+.delivered-meals {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 5rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  border-radius: 50%;
+  border: 1px solid #fae5d3ff;
+  margin-right: -1rem;
+  height: 4rem;
+}
+.delivered-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
