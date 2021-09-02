@@ -30,24 +30,67 @@ body {
   font-weight: 400;
   color: #555;
 }
+
 .section-header {
   background-color: #fdf2e9;
   padding: 6rem 0;
+}
+.grid {
+  display: grid;
+  gap: 6rem;
+}
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 .hero {
   display: grid;
   max-width: 81.25rem;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+.heading-primary,
+.heading-secondary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5;
+  margin-bottom: 6rem;
 }
 .heading-primary {
   font-size: 3.4rem;
-  font-weight: 700;
+
   line-height: 1.05;
-  color: #333;
+
   margin-bottom: 2rem;
-  letter-spacing: -0.5;
 }
+.heading-secondary {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+.heading-tertiary {
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.75px;
+}
+
 .hero-description {
   font-size: 1.25rem;
   line-height: 1.6;
@@ -160,4 +203,22 @@ body {
 .nav-bar-link.ctn:active {
   background-color: #cf711f;
   padding: 1.1rem 2.1 rem;
+}
+
+/* HOW IT WORKS SECTION */
+.section-how {
+  padding: 6rem 0;
+}
+.step-img {
+  width: 50%;
+}
+.step-number {
+  margin-bottom: 0.75rem;
+  font-size: 3.76rem;
+  color: #ddd;
+  font-weight: 600;
+}
+.step-description {
+  line-height: 1.8;
+  font-size: 1.25rem;
 }
