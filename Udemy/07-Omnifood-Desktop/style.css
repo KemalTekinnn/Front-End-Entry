@@ -39,6 +39,9 @@ body {
   display: grid;
   gap: 6rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 6rem;
+}
 .grid-2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -46,6 +49,10 @@ body {
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .container {
   max-width: 75rem;
@@ -440,4 +447,99 @@ strong {
 }
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/* ************** */
+/* Pricing   */
+/* ***************** */
+
+.section-pricing {
+  padding: 6rem 0;
+}
+.pricing-cards-container {
+}
+.pricing-card {
+  border-radius: 11px;
+
+  width: 75%;
+}
+.card-left {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 2.9rem;
+}
+.card-right {
+  background-color: #fdf2e9;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.card-right::before {
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  color: #333;
+  top: 6%;
+  right: -17%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  transform: rotate(45deg);
+  padding: 0.4rem 4rem;
+}
+.price-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 00.75px;
+}
+.price {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.price span {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+.price-info {
+  font-size: 1.25rem;
+}
+.sign-button {
+  margin-top: 3rem;
+  text-align: center;
+}
+/* ************** */
+/* Pricing   FEATURES */
+/* ***************** */
+.feature-icon {
+  color: #e67e22;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #fdf2e9;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.feature-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.plan-details {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
 }
