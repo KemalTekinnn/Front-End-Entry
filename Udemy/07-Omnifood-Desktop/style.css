@@ -24,6 +24,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px;
+ */
+  box-shadow: 0, 0, 0, 1rem rgba(230, 125, 34, 0.5);
+}
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -53,6 +60,10 @@ body {
 .grid-4-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 .container {
   max-width: 75rem;
@@ -110,6 +121,7 @@ strong {
   line-height: 1.6;
   margin-bottom: 3rem;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -456,8 +468,7 @@ strong {
 .section-pricing {
   padding: 6rem 0;
 }
-.pricing-cards-container {
-}
+
 .pricing-card {
   border-radius: 11px;
 
@@ -542,4 +553,169 @@ strong {
   text-align: center;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* ************** */
+/* CTA SECTİON */
+/* ***************** */
+.section-cta {
+  padding: 3rem 0 8rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(235, 151, 78),
+    rgba(230, 125, 34)
+  );
+  border-radius: 11px;
+  box-shadow: 0px 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 11px;
+}
+.cta-text-box {
+  padding: 3rem 4rem 4rem 4rem;
+  color: #45260a;
+}
+.cta-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 2rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+.cta-form input {
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1.25rem;
+  border: none;
+  font-family: inherit;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form select {
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1.25rem;
+  border: none;
+  font-family: inherit;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.cta-form button {
+  cursor: pointer;
+  border: none;
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 0.75rem;
+  align-self: end;
+}
+.cta-form button:hover {
+  background-color: #fff;
+  color: #333;
+  padding: 0.75rem;
+}
+.cta *:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px;
+ */
+  box-shadow: 0, 0, 0, 0.5rem rgba(253, 242, 233, 0.5);
+}
+
+/* ************** */
+/* Footer SECTİON */
+/* ***************** */
+.footer {
+  padding: 8rem 0;
+  border-top: 1px solid #eee;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.social-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.copyright {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #767676;
+  margin-top: auto;
+}
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.contacts {
+  line-height: 1.6;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.address {
+  margin-bottom: 1.5rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #767676;
+  transition: all 300ms;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
