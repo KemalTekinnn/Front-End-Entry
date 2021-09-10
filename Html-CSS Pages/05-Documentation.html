@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation Page</title>
+    <style>
+      .container {
+        width: 800px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        border: 2px solid black;
+      }
+      .left-bar {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid black;
+        padding-right: 8px;
+      }
+      .left-bar div {
+        border-bottom: 1px solid black;
+      }
+      .left-bar div:hover {
+        cursor: pointer;
+      }
+      .bar-text {
+        padding: 2px 25px 2px 15px;
+        font-size: 18px;
+      }
+      .left-bar h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .right-text-box {
+        padding: 2px 18px 18px 18px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-bar">
+        <div><h1>JS Documentation</h1></div>
+        <div><p class="bar-text">Introduction</p></div>
+        <div><p class="bar-text">What you should already know</p></div>
+        <div><p class="bar-text">JavaScript and Java</p></div>
+        <div><p class="bar-text">Hello world</p></div>
+        <div><p class="bar-text">Variables</p></div>
+        <div><p class="bar-text">Declaring variables</p></div>
+        <div><p class="bar-text">Variable scope</p></div>
+      </div>
+      <div class="right-text-box">
+        <h1>Introduction</h1>
+        <p>
+          JavaScript is a cross-platform, object-oriented scripting language. It
+          is a small and lightweight language. Inside a host environment (for
+          example,a web browser), Javascript can be connected to the objects of
+          its environment to provide programmatic control over them.
+        </p>
+        <p>
+          JavaScript contains a stantard library of objects, such as Array,
+          Date, and Math, and a core set of language elements such as operators
+          control structures, amd statements. Core JavaScript can be extended
+          for a variety of purposes vby supplementing it with additional
+          objects; for example:
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

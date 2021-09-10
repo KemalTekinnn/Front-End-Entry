@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #a9d7e9;
+}
+.container {
+  width: 80%;
+  margin: 150px auto;
+  background-color: #a9d7e9;
+  height: 2000%;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.form-container {
+  background-color: #f3f3f3;
+  margin: 20px auto;
+  width: 60%;
+  height: 515px;
+  padding: 30px;
+
+  border-radius: 15px;
+}
+
+.form-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  width: 37%;
+  background-color: #f3f3f3;
+
+  padding: 15px 0px;
+}
+.form-box input,
+select {
+  width: 150px;
+}
+.radio-list {
+  list-style: none;
+  display: inline-block;
+}
+.form-box-radio {
+}
+.label {
+  text-align: right;
+  margin-right: 10px;
+}
+.button1 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 2px;
+  background-color: #63e6be;
+  border-color: #63e6be;
+}
+.radio-list input {
+  width: 20px;
+  display: inline-block;
+  align-self: right;
+}
+.radio-list p {
+  display: inline-block;
+}

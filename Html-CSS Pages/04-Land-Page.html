@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandPage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        background-color: #ced4da;
+        }
+        .container {
+            width: 1100px;
+            margin:  10px auto;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+            
+        }
+        ul {
+            list-style: none;
+            padding: 30px;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 45px;
+        
+            
+        }
+        ul li:last-child {
+            margin-right: 0;;
+        }
+        #nav-bar {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: #495057;
+            color:#ced4da;
+        }
+        #header-img {
+            height: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid lightgrey;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        }
+        .showcase {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto 1fr;
+            align-items: center;
+            justify-content: center;
+            background-color: #e9ecef;
+            padding-bottom: 28px;
+        }
+        .showcase h1 {
+            grid-column: 1/-1;
+            align-items: center;
+            text-align: center;
+            padding:15px;
+            font-size: 50px;
+        }
+        .text-area {
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            align-items: center;
+            
+        }
+        .text-area p {
+            font-size:20px;
+            font-weight: 500;
+            line-height: 2;
+        }
+        .btn {
+            margin-top: 15px;
+            padding:10px;
+            text-transform: uppercase;
+            color:White;
+            font-size: 15px;
+            background-color: #fab005;
+            width: 250px;
+            margin-bottom: 200px;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+            border:none
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top:40px;
+            background-color: #252546;
+            gap: 20px;
+            padding-bottom:35px;
+        }
+        .footer p {
+            color: white;
+        }
+        .btn--1 {
+            margin-top: 15px;
+            padding:10px;
+            text-transform: uppercase;
+            color:White;
+            font-size: 15px;
+            background-color: #fab005;
+            width: 410px;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+            border: 2px solid  #252546;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <nav id="nav-bar">
+            <ul>
+                <li>The Book Series</li>
+                <li>Testimonials</li>
+                <li>The Author</li>
+                <li>Free resources</li>
+            </ul>
+        </nav>
+        <div class="showcase">
+        <h1>You Don't Know Javascript</h1>
+        <img
+            id="header-img"
+            src="https://images-na.ssl-images-amazon.com/images/I/51TxsqnWXpL.jpg"
+        />
+        <div class="text-area">
+            <p> Don't just drift through Javascript.</p>
+            <p> Understand How Javascript Works</p>
+            <p>Start your journey through the bumpy side of Javascript</p>
+            <button class="btn">Order You Copy Now</button>
+        </div>
+        </div>
+        </header>
+        <div class="footer">
+            <p> The first e-book in the book series is absolutely free</p>
+            <button class="btn--1">FIND OUT MORE ABOUT OFFER</button>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #f8f9fa;
+      }
+      .grid {
+        display: grid;
+      }
+      .grid-3-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 3rem;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+        transition: all 300ms;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+      .card:hover {
+        transform: translateY(-1%);
+        box-shadow: 0px 0px 5px rgb(28, 126, 214, 0.1);
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        color: #51cf66;
+      }
+      .yellow {
+        color: #fcc419 !important;
+      }
+      .red {
+        color: #fa5252 !important;
+      }
+      .description {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      .btn {
+        width: 250px;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #4dabf7;
+        padding: 1rem;
+        border: none;
+        border-radius: 3px;
+        color: #e7f5ff;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .btn:hover {
+        background-color: #1c7ed6;
+        cursor: pointer;
+      }
+      .helper {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+        margin-top: 5px;
+      }
+      .container {
+        max-width: 76rem;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      .head {
+        margin-top: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .head h1 {
+        margin-bottom: 1.5rem;
+        font-size: 5rem;
+      }
+      .head p {
+        font-size: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <h1>
+        Boost your <br />
+        handpan skills today!
+      </h1>
+      <p>Ready to get started? Try our courses for free</p>
+    </header>
+    <div class="container grid grid-3-cols">
+      <div class="card">
+        <p class="title">
+          <ion-icon class="icon" name="reorder-two-outline"></ion-icon>Beginner
+          Player
+        </p>
+        <p class="description">
+          Your all-in-one course for rapidly improving your playing, mastering
+          your handspan and enjoying beautiful patterns and grooves
+        </p>
+        <button class="btn">Start With The Course <br />Essentials</button>
+        <p class="helper">Try ıt for free</p>
+      </div>
+
+      <div class="card">
+        <p class="title yellow">
+          <ion-icon class="icon" name="reorder-three-outline"></ion-icon
+          >Intermediate Player
+        </p>
+        <p class="description">
+          Your ultimate course to perfect your playing by incorporating more
+          patters, rhythms,finger tricks and cool percussive techniques
+        </p>
+        <button class="btn">Start With The Course <br />Go Further</button>
+        <p class="helper">Try ıt for free</p>
+      </div>
+
+      <div class="card">
+        <p class="title red">
+          <ion-icon class="icon" name="reorder-four-outline"></ion-icon>Advanced
+          Player
+        </p>
+        <p class="description">
+          Develop your own unique style, explore new techniques, get a deeper
+          understanding of musicality and composition
+        </p>
+        <button class="btn">Learn more about our masterclasses</button>
+        <p class="helper">Try ıt for free</p>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

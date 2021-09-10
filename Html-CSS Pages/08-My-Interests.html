@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemal's Interests</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (min-width: 900px) {
+        .container {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 30px;
+          background-color: #f1f3f5;
+          color: #555;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          height: 110vh;
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: 250px;
+          height: 250px;
+          background-color: #e9ecef;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+        h1,
+        h2,
+        h3 {
+          text-align: center;
+        }
+        h3 {
+          margin-top: 25px;
+        }
+        .list {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        h1 {
+          font-size: 6.4em;
+          margin-bottom: 10px;
+        }
+        h2 {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+        }
+        p {
+          text-align: center;
+          font-size: 1.35em;
+        }
+        a {
+          text-decoration: none;
+          color: #495057;
+          transition: background-color 300ms;
+        }
+        .footer {
+          display: flex;
+          gap: 60px;
+          padding-top: 20px;
+          justify-content: center;
+        }
+        .footer a:hover {
+          color: #868e96;
+        }
+        .row1 {
+          display: flex;
+          gap: 50px;
+          justify-content: center;
+          padding-top: 25px;
+        }
+        .card:hover {
+          box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+        }
+        .main-title {
+          margin-top: 5px;
+        }
+      }
+      @media screen and (max-width: 899px) {
+        .container {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          background-color: #f1f3f5;
+          color: #555;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          height: 110vh;
+          gap: 40px;
+          overflow-x: hidden;
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 250px;
+          background-color: #e9ecef;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+        h1,
+        h2,
+        h3 {
+          text-align: center;
+        }
+        h3 {
+          margin-top: 25px;
+        }
+        .list {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        h1 {
+          font-size: 6.4em;
+          margin-bottom: 10px;
+        }
+        h2 {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+        }
+        p {
+          text-align: center;
+          font-size: 1.35em;
+        }
+        a {
+          text-decoration: none;
+          color: #495057;
+          transition: background-color 300ms;
+        }
+        .footer {
+          display: flex;
+          gap: 60px;
+          padding-top: 20px;
+          justify-content: center;
+        }
+        .footer a:hover {
+          color: #868e96;
+        }
+        .row1 {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          justify-content: center;
+        }
+        .card:hover {
+          box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+        }
+        .main-title {
+          margin-top: 5px;
+          padding-top: 1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-title">
+        <h1>Kemal's Interests</h1>
+        <p>
+          The World Wants to know: who is Kemal? Read this page to learn about
+          Kemal's likes!
+        </p>
+      </div>
+      <div>
+        <h2>What's Your Top 5</h2>
+        <p>Kemal's recently asked about his top 5 Here this answers!</p>
+      </div>
+      <div class="row1">
+        <div class="card">
+          <h3>Movies</h3>
+          <ol class="list">
+            <li><b>Yücel'in Çiçekleri</b></li>
+            <li>Man From Earth</li>
+            <li>God On Trial</li>
+            <li>Wonder</li>
+            <li>Interstellar</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Musicians</h3>
+          <ol class="list">
+            <li>Mozart</li>
+            <li>Ramin Djawadi</li>
+            <li>The Smiths</li>
+            <li>Fazıl Say</li>
+            <li>The White Buffalo</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Places I've Visited</h3>
+          <ol class="list">
+            <li>Marmaris</li>
+            <li>İzmir</li>
+            <li>Şirince</li>
+            <li>Safranbolu</li>
+            <li>Kırklareli</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row1">
+        <div class="card">
+          <h3>Topics</h3>
+          <ol class="list">
+            <li>Computer Science</li>
+            <li>Politics</li>
+            <li>Philosophy</li>
+            <li>Computer Games</li>
+            <li>Pyschology</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Tv Shows</h3>
+          <ol class="list">
+            <li>Mindhunter</li>
+            <li>True Detective First Season</li>
+            <li>Hannibal First Two Season</li>
+            <li>Westworld</li>
+            <li>Sopranos</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Dreams</h3>
+          <ol class="list">
+            <li>Owning A Dog</li>
+            <li>Working From Home</li>
+            <li>Start a Company</li>
+            <li>Living Alone</li>
+            <li>Sopranos</li>
+          </ol>
+        </div>
+      </div>
+      <div class="footer">
+        <a
+          href="https://open.spotify.com/user/11137133871?si=9251a1187b844d04"
+          alt="spotify-link"
+          >Spotify</a
+        >
+        <a
+          href="https://www.imdb.com/list/ls069551214/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=4dc7ad1a-76a6-49eb-9acb-5d6959572df8&pf_rd_r=F1TQT2547ANDYEP99XZE&pf_rd_s=right-4&pf_rd_t=48201&pf_rd_i=watchlist&ref_=wt_otl_1"
+          alt="imbdb-link"
+          >Imdb</a
+        >
+        <a href="https://github.com/KemalTekinnn" alt="github-link">Github</a>
+      </div>
+      <!--  -->
+    </div>
+  </body>
+</html>

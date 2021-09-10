@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: #f8f8f8;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1;
+        background-color: #000;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 10rem 0;
+      }
+      .secondary-title {
+        font-size: 7rem;
+        font-weight: 700;
+        white-space: nowrap;
+        line-height: 1.2;
+        position: relative;
+      }
+      .name::after {
+        content: "Web Design";
+        position: absolute;
+        top: 8.5rem;
+        left: 0;
+        transition: all 300ms;
+      }
+      .secondary-title:hover .name::after {
+        content: "Problem Solving";
+        color: rgb(238, 235, 43);
+      }
+      .hero {
+        height: 100vh;
+        position: relative;
+      }
+      .icon {
+        position: absolute;
+        right: -50%;
+        bottom: 10%;
+        height: 40px;
+        width: 40px;
+        animation: 3s arrow-move 3;
+      }
+      @keyframes arrow-move {
+        from {
+          padding-bottom: 20%;
+        }
+        to {
+          padding-bottom: 0%;
+        }
+      }
+      .grid {
+        display: grid;
+      }
+      .grid-2-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .flex {
+        display: flex;
+        gap: 14rem;
+        align-content: center;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .gap-md {
+        gap: 5rem !important;
+      }
+      .margin-bottom {
+        margin-bottom: 4rem;
+      }
+      .text-area {
+        font-size: 2.3rem;
+        line-height: 1.8;
+        font-weight: 300;
+        color: #ffffff;
+        letter-spacing: 0.5;
+      }
+      .third-title {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        padding-top: 25px;
+      }
+      .info-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.4rem;
+        transition: all 300ms;
+      }
+      .info-link:link,
+      .info-link:visited {
+        font-weight: 500;
+        letter-spacing: 2;
+        padding: 10px 0;
+        border-bottom: 1px solid #777;
+      }
+      .info-link:hover,
+      .info-link:hover {
+        border-bottom: 1px solid white;
+      }
+      .services-title {
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+      }
+      .services {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .service-box {
+        display: inline-block;
+        border: 2px solid #252525;
+        padding: 1rem 2rem;
+      }
+      .service-box:hover {
+        background-color: #f8f8f8;
+        color: #000;
+        cursor: pointer;
+      }
+      .work-title {
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+      .work-img {
+        width: 100%;
+      }
+      .work-text p {
+        line-height: 1.8;
+        font-size: 1.3rem;
+      }
+      .subheading {
+        display: inline-block;
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        color: #f8f8f8;
+        font-weight: 500;
+      }
+      .explore {
+        color: #555;
+        margin-top: 1.5rem;
+        font-weight: 500;
+        border-bottom: 1px solid #f8f8f8;
+      }
+      .explore:hover {
+        cursor: pointer;
+        color: #fff;
+      }
+      .form-box {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .form-input {
+        width: 50%;
+        height: 2.8rem;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background-color: #000;
+        color: #555;
+        font-size: 2rem;
+        padding-left: 5px;
+      }
+      .form-box label {
+        font-size: 4rem;
+        font-weight: 500;
+      }
+      .btn {
+        background-color: #fff;
+        border-radius: 50%;
+        color: #000;
+        display: block;
+        width: 7rem;
+        height: 7rem;
+        align-self: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+        border: none;
+      }
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      @media (max-width: 1200px) {
+        .container {
+          max-width: 55rem;
+          margin: 0 auto;
+          padding: 10rem 0;
+        }
+        .secondary-title {
+          font-size: 4rem;
+        }
+        .name::after {
+          left: 0;
+          top: 5rem;
+        }
+        .form-box label {
+          font-size: 2rem;
+        }
+        .text-area {
+          font-size: 2rem;
+          font-weight: 300;
+        }
+        .gap-md {
+          gap: 2.5rem !important;
+        }
+        .work-img {
+          display: none;
+        }
+        .my-works {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .flex {
+          flex-direction: column;
+          text-align: center;
+          gap: 2.5rem;
+        }
+        .text-area {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .container {
+          max-width: 25rem;
+          margin: 0 auto;
+          padding: 2.5rem 0.5rem;
+        }
+        .secondary-title {
+          font-size: 2.5rem;
+        }
+        .name::after {
+          left: 0;
+          top: 3rem;
+        }
+        .form-box {
+          flex-direction: column;
+        }
+        .subheading {
+          text-align: center !important;
+          display: block;
+        }
+        .services-title {
+          text-align: center;
+        }
+        .service-box {
+          text-align: center;
+          margin: 0 auto;
+        }
+        .hero {
+          height: 25vh;
+        }
+        .info-link {
+          font-size: 1rem;
+        }
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav></nav>
+
+    <main>
+      <section class="hero container">
+        <h2 class="secondary-title">
+          <span class="name">Kemal </span><br />
+          <span></span> <br />
+          Studio
+        </h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+      </section>
+
+      <section class="section-info">
+        <div class="container flex">
+          <h3 class="third-title">Introduction</h3>
+
+          <div class="text-area">
+            <p class="context">
+              Kemal Tekin Web Studio is not your average team of web developers.
+              Smaller than our rivals, we see ourselves as problem solvers.
+            </p>
+            <br />
+
+            <p class="context">
+              Websites, in our opinion, are just business tools. The problem we
+              solve is by making your website the most effective tool for your
+              business.
+            </p>
+            <br />
+            <p class="context">
+              We know what it takes to convert a visitor into a customer, we
+              believe that the Buy-button is in the brain.
+            </p>
+            <br />
+            <p>
+              <a class="info-link" href="#contact">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-services">
+        <div class="container">
+          <h2 class="services-title">Services</h2>
+          <div class="services">
+            <h3 class="service-box">Website Design</h3>
+            <h3 class="service-box">Website Development</h3>
+            <h3 class="service-box">Website Speed Optimization</h3>
+            <h3 class="service-box">API Integration</h3>
+            <h3 class="service-box">Shopify Store Design</h3>
+            <h3 class="service-box">Shopify Custom Coding</h3>
+            <h3 class="service-box">Shopify Store Design</h3>
+            <h3 class="service-box">Shopify Store Design</h3>
+            <h3 class="service-box">Shopify Store Design</h3>
+          </div>
+        </div>
+      </section>
+
+      <article class="my-works container">
+        <span class="subheading">Projects</span>
+        <div class="flex gap-md margin-bottom">
+          <img class="work-img" src="Screenshot_10.png" />
+          <div class="work-text">
+            <h3 class="work-title">Omnifood</h3>
+            <p class="context">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              provident quos voluptas rerum rem commodi hic? Nihil aut debitis
+              nostrum sed praesentium. Commodi vel provident natus illo qui
+              nostrum corrupti dolorem odit maxime eius rem architecto sequi, at
+              suscipit unde.
+            </p>
+
+            <p><a class="explore" src="">Explore</a></p>
+          </div>
+        </div>
+
+        <div class="flex gap-md margin-bottom">
+          <div class="work-text">
+            <h3 class="work-title">Omnifood</h3>
+            <p class="context">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              provident quos voluptas rerum rem commodi hic? Nihil aut debitis
+              nostrum sed praesentium. Commodi vel provident natus illo qui
+              nostrum corrupti dolorem odit maxime eius rem architecto sequi, at
+              suscipit unde.
+            </p>
+
+            <p><a class="explore" src="">Explore</a></p>
+          </div>
+          <img class="work-img" src="Screenshot_10.png" />
+        </div>
+
+        <div class="flex gap-md">
+          <img class="work-img" src="Screenshot_10.png" />
+          <div class="work-text">
+            <h3 class="work-title">Omnifood</h3>
+            <p class="context">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              provident quos voluptas rerum rem commodi hic? Nihil aut debitis
+              nostrum sed praesentium. Commodi vel provident natus illo qui
+              nostrum corrupti dolorem odit maxime eius rem architecto sequi, at
+              suscipit unde.
+            </p>
+
+            <p><a class="explore" src="">Explore</a></p>
+          </div>
+        </div>
+      </article>
+
+      <section class="section-info">
+        <div class="container flex">
+          <h3 class="third-title">My&nbspstory</h3>
+
+          <div class="text-area">
+            <p class="context">
+              Kemal Tekin first fell in love with the art of programming when he
+              was young. Growing up, he was more fascinated with how video games
+              were made, than actually playing them. He was still at school when
+              he took his first foray into the world of programming and hasn’t
+              looked back since.
+            </p>
+            <br />
+
+            <p class="context">
+              By the time he reached Grade 4, he had already programmed his
+              first game. While he was studying for his Bachelor’s in IT and
+              Master’s in Business Education, he gained a lot of experience by
+              completing freelance work for clients from all over the world.
+            </p>
+
+            <br />
+            <p>
+              <a class="info-link" href="#contact">Say Hello</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Hello">
+        <div class="container flex-column">
+          <p class="subheading">Contact</p>
+
+          <div class="form-box">
+            <label for="name">My Name is</label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              placeholder="Kemal Tekin"
+              required
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="e-mail">Here is my e-mail</label>
+            <input
+              class="form-input"
+              type="email"
+              id="e-mail"
+              placeholder="example@hotmail.com"
+              required
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="help">I need help with</label>
+            <textarea id="help" class="form-input" required></textarea>
+          </div>
+          <button class="btn">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

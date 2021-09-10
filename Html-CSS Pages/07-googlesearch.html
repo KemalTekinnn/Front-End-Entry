@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+      }
+      body {
+        position: relative;
+        line-height: 1.3;
+        font-weight: normal;
+        background-color: black;
+
+      }
+      a {
+        text-decoration: none;
+        color: #8ab4f8;
+      }
+      .container {
+        margin-left: 200px;
+        height: 100vh;
+        width: 600px;
+      }
+      .search-bar {
+        margin-top: 25px;
+        border-radius: 25px;
+        width: 550px;
+        height: 40px;
+        border:none;
+        box-shadow: 5px 2px 16px rgba(34,34,34,0.15);
+        
+        padding-left: 7px;
+        
+      }
+    .search {
+      position: relative;
+    }
+      .logo {
+        position: absolute;
+        top:10px;
+        left:40px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 65px;
+        top: 32px;
+      }
+      .icon:hover {
+        cursor: pointer;
+      }
+      .side-bar {
+        margin-top: 20px;
+        display: flex;
+        list-style: none;
+        gap: 22px;
+        cursor: pointer;
+        color: white;
+      }
+      .buttons {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100vw;
+      }
+      .ico {
+        width: 16px;
+        height: 19px;
+        margin-right: 8px;
+      }
+      .p-b {
+        padding-top: 10px;
+        color: rgba(0, 0, 0, 0.3);
+      }
+      .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .results {
+        display: flex;
+        gap: 60px;
+        margin-top: 40px;
+      }
+      .btn {
+        border-radius: 8px;
+        padding: 8px 25px;
+        margin-top: 16px;
+        border:none;
+        cursor:pointer;
+      }
+      .r1 {
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        color:#bdc1c6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+     <img
+        class="logo" src="doodle-champion-island-games-august-30-6753651837109010-s.png"
+     />
+      <div class="container" >
+      <div class="search">
+      <input type="text" class="search-bar"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg></input>
+      <div class="buttons">
+        <ul class="side-bar">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>Tümü</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>Görseller</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+          </svg>Haberler</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>Videolar</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>Alışveriş</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>Daha fazla</li>
+        </ul>
+      </div>
+      <p class="p-b">Yaklaşık 10.290.000.000 sonuç bulundu (0,46 saniye) </p>
+    </div>  
+    <section class="pages">
+      <div class="page">
+        <a href="#">  <h2>Google Search Help</h2> </a>
+        <p>Popular articles · Fix problems & request removals · Browse the web · Search on your phone or tablet · Search images · Find, play & manage podcasts on Google ...</p>
+      </div>
+
+      <div class="page">
+        <a href="#"><h2>Google Search Console</h2></a>
+        <p>Optimize your content with Search Analytics. See which queries bring users to your site. · Get your content on Google. Submit sitemaps and individual URLs for ...</p>
+      </div>
+
+
+      <div class="page">
+        <a href="#">  <h2>Google</h2></a>
+        <p>BUNU BİLDİR. İPTAL. TAMAM. SİL. Ayarlar · Arama ayarları · Gelişmiş arama · Arama'daki verileriniz · Arama geçmişi · Arama yardımı. Geri Bildirim.</p>
+      </div>
+
+      <div class="page">
+        <a href="#"> <h2>Google Search Central (formerly Webmasters) | Web SEO ... </h2></a>
+        <p>Search Console is a free tool from Google that helps developers, website owners, and SEO professionals understand how their site is performing on Google Search.</p>
+      </div>
+
+      <div class="page">
+        <a href="#"> <h2>Google Trends </h2></a>
+        <p>Explore what the world is searching. Enter a search term or a topic. search. Or start with an example. keyboard_arrow_down. Or start with an example.</p>
+      </div>
+
+      <div class="page">
+        <a href="#"> <h2>British Council: Learn English Online </h2></a>
+        <p>Learn English online using our high-quality resources to quickly improve your English. Take our free level test to help you find your English language level ...</p>
+      </div>
+
+      <div class="page">
+        <a href="#"> <h2>EnglishClub - Learn or Teach English Today </h2></a>
+        <p>Free online resources for learning English or teaching it. From easy guides to grammar to fun games and quizzes.</p>
+      </div>
+
+      <div class="page">
+        <a href="#"> <h2> Lingerie - Lonely Label</h2></a>
+        <p>Shop the full Lonely Lingerie collection with worldwide shipping, easy returns.</p>
+      </div>
+    </section>
+
+    <div class="results">
+     
+      <div class="r1"> 
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello World </button>
+
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello, World!'' program </button>
+
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello World  Code</button>
+      </div>
+
+      <div class="r1">
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello World </button>
+
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello, World!'' program </button>
+
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" class="ico" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>Hello World  Code</button>
+
+      </div>
+    </div>
+    </div>
+    </header>
+  </body>
+</html>
