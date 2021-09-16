@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        color: white;
+        overflow: hidden;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      #page1 {
+        background: cadetblue;
+      }
+      #page2 {
+        background: rgb(163, 129, 83);
+      }
+      #page3 {
+        background: rgb(36, 70, 70);
+      }
+      #page4 {
+        background: rgb(35, 55, 230);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .Main-title {
+        animation: b 3s 1 ease;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      .margin {
+        margin: 0 auto;
+      }
+      @keyframes b {
+        from {
+          transform: translateY(-375px);
+        }
+        to {
+        }
+      }
+      .text {
+        font-size: 1.1rem;
+        animation: a 3s 1;
+      }
+      @keyframes a {
+        from {
+          transform: translateX(-1000px);
+        }
+        to {
+          transform: translate();
+        }
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #f4f4f4;
+        width: 160px;
+        font-weight: 500;
+        color: black;
+        transition: all 400ms;
+      }
+      .btn:hover {
+        background-color: #333;
+        color: #fff;
+      }
+      .btns {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="page1">
+      <div class="container">
+        <h1 class="Main-title">Welcome To My Presentation</h1>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+          asperiores illum ducimus, sed voluptate earum! Veritatis consectetur
+          sapiente veniam dolore maxime a cum ad ex. Incidunt reiciendis
+          deleniti error vero! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Praesentium asperiores illum ducimus, sed voluptate
+          earum! Veritatis consectetur sapiente veniam dolore maxime a cum ad
+          ex. Incidunt reiciendis deleniti error vero!
+        </p>
+        <a class="btn margin" href="#page2">
+          <i class="fas fa-arrow-circle-down"></i> &ThinSpace;Next Page
+        </a>
+      </div>
+    </section>
+
+    <section id="page2">
+      <div class="container">
+        <h1 class="Main-title">Page 2</h1>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+          asperiores illum ducimus, sed voluptate earum! Veritatis consectetur
+          sapiente veniam dolore maxime a cum ad ex. Incidunt reiciendis
+          deleniti error vero! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Praesentium asperiores illum ducimus, sed voluptate
+          earum! Veritatis consectetur sapiente veniam dolore maxime a cum ad
+          ex. Incidunt reiciendis deleniti error vero!
+        </p>
+        <div class="btns">
+          <a class="btn" href="#page1"
+            ><i class="fas fa-arrow-circle-up"></i>&ThinSpace;Previous Page
+          </a>
+          <a class="btn" href="#page3">
+            <i class="fas fa-arrow-circle-down"></i>&ThinSpace; Next Page
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="page3">
+      <div class="container">
+        <h1 class="Main-title">Page 3</h1>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+          asperiores illum ducimus, sed voluptate earum! Veritatis consectetur
+          sapiente veniam dolore maxime a cum ad ex. Incidunt reiciendis
+          deleniti error vero! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Praesentium asperiores illum ducimus, sed voluptate
+          earum! Veritatis consectetur sapiente veniam dolore maxime a cum ad
+          ex. Incidunt reiciendis deleniti error vero!
+        </p>
+        <div class="btns">
+          <a class="btn" href="#page2">
+            <i class="fas fa-arrow-circle-up"></i> &ThinSpace;Previous Page
+          </a>
+          <a class="btn" href="#page4">
+            <i class="fas fa-arrow-circle-down"></i> &ThinSpace;Next Page
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="page4">
+      <div class="container">
+        <h1 class="Main-title">Page 4</h1>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+          asperiores illum ducimus, sed voluptate earum! Veritatis consectetur
+          sapiente veniam dolore maxime a cum ad ex. Incidunt reiciendis
+          deleniti error vero! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Praesentium asperiores illum ducimus, sed voluptate
+          earum! Veritatis consectetur sapiente veniam dolore maxime a cum ad
+          ex. Incidunt reiciendis deleniti error vero!
+        </p>
+
+        <a class="btn margin" href="#page3"
+          ><i class="fas fa-arrow-circle-up"></i>&ThinSpace;Previous Page
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
