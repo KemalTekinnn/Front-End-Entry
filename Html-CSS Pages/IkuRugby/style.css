@@ -71,8 +71,9 @@ header {
   justify-content: center;
 }
 .main-logo {
-  width: 15rem;
-  height: 15rem;
+  margin-top: 1rem;
+  width: 17rem;
+  height: 17rem;
 }
 /* MAIN SECTION */
 .subheading {
