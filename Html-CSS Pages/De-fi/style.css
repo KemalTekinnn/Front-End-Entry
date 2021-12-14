@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+:root {
+  --top-back: rgba(0, 0, 0, 0)
+    linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%) repeat
+    scroll 0% 0%;
+}
+.heading1-box {
+  background: var(--top-back);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+.i {
+  display: flex;
+  flex-direction: column;
+}
+.i2 {
+  display: flex;
+}
+.center-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.help {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 16px;
+  border: none;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+}
