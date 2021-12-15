@@ -22,16 +22,24 @@
 }
 .i2 {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 1.6rem;
 }
 .center-box {
+  background: var(--top-back);
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+  padding: 3rem;
 }
 .help {
+  display: inline-flex;
+
   padding-left: 20px;
   padding-right: 20px;
   font-weight: 600;
@@ -40,4 +48,43 @@
   border: none;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+}
+.info-box {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: black;
+  width: 240px;
+  height: 120px;
+  border-radius: 17px;
+  padding: 32px;
+  color: wheat;
+}
+.quantity {
+  display: flex;
+}
+.cake-b {
+  display: block;
+}
+.cake-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.claim-button {
+  padding: 6px 12px 6px 12px;
+  border-radius: 30px;
+  background-color: turquoise;
+  color: white;
+  border: none;
+}
+
+.span1 {
+  font-weight: 600;
+  color: rgb(244, 238, 255);
 }
