@@ -19,5 +19,4 @@ My Courses;
    <li> <a href="https://flukeout.github.io/"> CSS Dinner</a></li>
    <li> <a href="https://flexboxfroggy.com/"> Flexbox Froggy </a></li>
    <li> <a href="https://developer.mozilla.org/en-US/"> MDN </a></li>
-   
   </ul>
