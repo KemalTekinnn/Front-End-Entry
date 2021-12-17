@@ -39,9 +39,8 @@
 }
 .help {
   display: inline-flex;
-
-  padding-left: 20px;
-  padding-right: 20px;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
   font-weight: 600;
   font-size: 1rem;
   border-radius: 16px;
@@ -55,7 +54,7 @@
   gap: 0.7rem;
   background-color: black;
   width: 240px;
-  height: 120px;
+  height: 150px;
   border-radius: 17px;
   padding: 32px;
   color: wheat;
@@ -65,6 +64,11 @@
 }
 .cake-b {
   display: block;
+  color: rgb(184, 173, 210);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: 4px;
+  font-size: 16px;
 }
 .cake-quantity {
   display: flex;
@@ -78,13 +82,36 @@
 }
 .claim-button {
   padding: 6px 12px 6px 12px;
-  border-radius: 30px;
+
   background-color: turquoise;
-  color: white;
   border: none;
+
+  -moz-box-align: center;
+  align-items: center;
+  border: 0px none;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+
+  color: white;
 }
 
 .span1 {
   font-weight: 600;
+  color: rgb(244, 238, 255);
+}
+.syrup-heading {
+  color: rgb(154, 106, 255);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.heading-alt {
   color: rgb(244, 238, 255);
 }
