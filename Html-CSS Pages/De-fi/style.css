@@ -104,6 +104,10 @@
 .span1 {
   font-weight: 600;
   color: rgb(244, 238, 255);
+  font-size: 19px;
+}
+.span2 {
+  font-size: 14px;
 }
 .syrup-heading {
   color: rgb(154, 106, 255);
@@ -114,4 +118,7 @@
 }
 .heading-alt {
   color: rgb(244, 238, 255);
+}
+.button-outline {
+  width: 24px;
 }
