@@ -9,5 +9,5 @@
 # <a href="https://kemaltekinnn.github.io/Front-End-Entry/Html-CSS%20Pages/09-Portfolio.html"> My portfolio clone  </a> <br>
 # <a href="https://kemaltekinnn.github.io/Front-End-Entry/Html-CSS%20Pages/10-tenth.html"> Cards </a> <br>
 # <a href="https://kemaltekinnn.github.io/Front-End-Entry/Html-CSS%20Pages/medium.html"> Medium Clone </a> <br>
-
+# <a href="https://kemaltekinnn.github.io/Front-End-Entry/Html-CSS%20Pages/defi/index.html"> Medium Clone </a> <br>
 
