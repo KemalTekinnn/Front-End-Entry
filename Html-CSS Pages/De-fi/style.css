@@ -9,6 +9,7 @@
   --top-back: rgba(0, 0, 0, 0)
     linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%) repeat
     scroll 0% 0%;
+  --back1: rgb(39, 38, 44);
 }
 .heading1-box {
   background: var(--top-back);
@@ -38,24 +39,32 @@
   padding: 3rem;
 }
 .help {
+  font-family: "Times New Roman", Times, serif;
   display: inline-flex;
+  color: rgb(39, 38, 44);
   justify-content: center;
-  padding: 10px 20px 10px 20px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  font-weight: bold;
+  font-size: 16px;
   border-radius: 16px;
   border: none;
+  background-color: rgba(235, 235, 247, 0.836);
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+}
+.help:hover {
+  opacity: 0.5;
 }
 .info-box {
   display: inline-flex;
   flex-direction: column;
   gap: 0.7rem;
-  background-color: black;
-  width: 240px;
+  background-color: var(--back1);
+  width: 310px;
   height: 150px;
-  border-radius: 17px;
+  border-radius: 25px;
   padding: 32px;
   color: wheat;
 }
@@ -100,7 +109,88 @@
 
   color: white;
 }
+/*******/
+/* NAV-BAR */
+/*******/
+.upper-left-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+/*******/
+/* NAV-BAR ENDS*/
+/*******/
+
+/* ************ */
+/* TOGGLE-BAR */
+/* *********** */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(96, 78, 139);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 20px;
+  left: 0px;
+  bottom: -2px;
+  background-color: rgb(141, 105, 224);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 8px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* ************ */
+/* TOGGLE ENDS  */
+/* *********** */
 .span1 {
   font-weight: 600;
   color: rgb(244, 238, 255);
@@ -121,4 +211,12 @@
 }
 .button-outline {
   width: 24px;
+}
+.mb {
+}
+.mb:hover {
+  cursor: pointer;
+}
+.activebutton {
+  stroke: blue;
 }
