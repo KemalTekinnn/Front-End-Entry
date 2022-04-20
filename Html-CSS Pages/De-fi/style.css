@@ -109,9 +109,20 @@
 
   color: white;
 }
+body {
+  background-color: black;
+}
 /*******/
 /* NAV-BAR */
 /*******/
+.upper-bar {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 1500px;
+  padding: 4.5rem 2rem;
+}
+
 .upper-left-bar {
   display: flex;
   flex-direction: row;
@@ -121,6 +132,12 @@
   align-items: center;
 }
 
+.stake-text {
+  color: rgb(244, 238, 255);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
 /*******/
 /* NAV-BAR ENDS*/
 /*******/
@@ -211,6 +228,7 @@ input:checked + .slider:before {
 }
 .button-outline {
   width: 24px;
+  stroke: rgb(184, 173, 210);
 }
 .mb {
 }
@@ -219,4 +237,24 @@ input:checked + .slider:before {
 }
 .activebutton {
   stroke: blue;
+}
+.toggle-2 {
+  background-color: rgb(55, 47, 71);
+  border-radius: 16px;
+  display: inline-flex;
+  border: 1px solid rgb(38, 33, 48);
+  width: auto;
+  padding-right: 12px;
+  cursor: pointer;
+}
+.toggle-2 a {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  border-radius: 16px;
+}
+.checked-color {
+  background-color: rgb(184, 173, 210);
 }
