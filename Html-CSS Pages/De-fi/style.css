@@ -258,3 +258,48 @@ input:checked + .slider:before {
 .checked-color {
   background-color: rgb(184, 173, 210);
 }
+/****************/
+/* STAKED POOL */
+/***************/
+.poolgap {
+}
+.poolstable {
+  display: flex;
+  color: white;
+  gap: 1.5rem;
+  text-align: center;
+}
+.StakeCake,
+.CoinStaked,
+.CoinApy {
+  justify-content: center;
+  height: 32px;
+}
+.CoinName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+.CoinInfo {
+  font-size: 12px;
+}
+.coinLabel {
+  color: rgb(184, 173, 210);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 12px;
+  text-align: left;
+}
+.CoinStaked {
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+}
+.CoinNumber,
+.CoinDollar {
+  margin: 0;
+  font-size: 14px;
+}
+.APY {
+  justify-content: center;
+}
